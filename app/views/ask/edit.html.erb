@@ -1,0 +1,7 @@
+<h1 class = "text-center">질문 수정</h1>
+
+<form action="/ask/<%=@ask.id%>/update" method = "POST">
+    <input class="form-control" type="text" name = "question" value="<%=@ask.question%>"><br/>
+    <input class ="btn btn-dark" type="submit" value="확인">
+    <input type="hidden" name="authenticity_token" value = "<%= form_authenticity_token %>"><br/>
+</form>
